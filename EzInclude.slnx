@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="EzInclude/EzInclude.csproj">
+    <Deploy />
+  </Project>
+</Solution>

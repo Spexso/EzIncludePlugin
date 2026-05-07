@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidCopyIncludePkg">
+    <Groups>
+      <Group guid="guidCopyIncludeCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+      <Group guid="guidCopyIncludeCmdSet" id="MyTabMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_EZDOCWINTAB"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidCopyIncludeCmdSet" id="CopyIncludeCmd" priority="0x0100" type="Button">
+        <Parent guid="guidCopyIncludeCmdSet" id="MyMenuGroup"/>
+        <Strings>
+          <ButtonText>Copy #include Path</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidCopyIncludeCmdSet" id="CopyIncludeCmdTab" priority="0x0100" type="Button">
+        <Parent guid="guidCopyIncludeCmdSet" id="MyTabMenuGroup"/>
+        <Strings>
+          <ButtonText>Copy #include Path</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidCopyIncludePkg" value="{587f3ef7-ecfa-4eb3-9dcf-1de0588476f4}" />
+
+    <GuidSymbol name="guidCopyIncludeCmdSet" value="{c442b7f7-ead6-4088-b821-e6501615f9bd}">
+      <IDSymbol name="MyMenuGroup"       value="0x1020" />
+      <IDSymbol name="MyTabMenuGroup"    value="0x1021" />
+      <IDSymbol name="CopyIncludeCmd"    value="0x0100" />
+      <IDSymbol name="CopyIncludeCmdTab" value="0x0101" />
+    </GuidSymbol>
+  </Symbols>
+
+</CommandTable>

@@ -1,2 +1,2 @@
 # Easy Include Path plugin for Visual Studio
-Created this for Unreal Engine Projects specifically, feel free to use
+Created this for Unreal Engine Projects specifically, feel free to use or edit
